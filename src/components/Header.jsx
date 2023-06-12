@@ -16,29 +16,29 @@ function Header() {
             <nav>
                 <ul>
                     <li>
-                            <FaHome/>
+                            <FaHome style={{color:'gold'}}/>
                         <span className='span'><Link to="/"><a href='#'>Home</a></Link></span>
                         </li>
                         <li>
-                            <FcAbout/>
+                            <FcAbout style={{color:'gold'}}/>
                             <span className='span'>
                         <Link to="/aboutus"><a href='#'>AboutUS</a></Link>
                         </span>
                         </li>
                         <li>
-                            <MdContactPage/>
+                            <MdContactPage style={{color:'gold'}}/>
                         <span className='span'>
                         <Link to="/contact"><a href='#'>Contact</a></Link>
                         </span>
                         </li>
                         <li>
-                            <BsHouseXFill/>
+                            <BsHouseXFill style={{color:'gold'}}/>
                         <span className='span'>
                         <Link to="/houselisting"><a href='#'> HouseListing</a></Link>
                         </span>
                         </li>
                         <li>
-                            <RiLoginBoxFill/>
+                            <RiLoginBoxFill style={{color:'gold'}}/>
                         <span className='span'>
                         <Link to="/signup"><a href='#'><button>SignUp</button></a></Link>
                         </span>

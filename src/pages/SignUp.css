@@ -1,0 +1,38 @@
+.main {
+    background-color: #ebf6f5;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 97%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+}
+
+.signup-content1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+}
+
+label {
+    font-weight: bolder;
+}
+
+input {
+    padding: 5px;
+    border-radius: 8px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+.signup-content2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
