@@ -26,6 +26,10 @@ input {
     border-radius: 8px;
 }
 
+p {
+    color: red;
+}
+
 img {
     border-radius: 10px;
 }

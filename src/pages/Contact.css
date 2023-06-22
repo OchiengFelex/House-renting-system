@@ -1,0 +1,23 @@
+.main-contact {
+    background-image: url('./src/assets/contact3.avif');
+    display: flex;
+    width: 97%;
+    height: 100vh;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #ebf6f5;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    padding-top: 8rem;
+
+}

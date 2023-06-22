@@ -29,27 +29,27 @@ function SignUp() {
             <h3>Sign up now and unlock exclusive access!</h3>
 
             <form  onSubmit={handleSubmit(confirmSubmision)}>
-                <label>Enter First Name</label><br/><br></br>
-                <input type='text' placeholder='First Name'{...register('FirstName')}/><br/><br/>
+                <label>Enter First Name</label><br/><br/>
+                <input type='text' placeholder='First Name'{...register('FirstName')}/><br/>
                 <p>{errors.FirstName?.message}</p> 
 
                 <label>Enter Last Name</label><br/><br/>
-                <input type='text' placeholder='Last Name'{... register('LastName')}/><br/><br/>
+                <input type='text' placeholder='Last Name'{... register('LastName')}/><br/>
                 <p>{errors.LastName?.message}</p>
                 <label>Enter Email</label><br/><br/>
-                <input type='email' placeholder='Enter Email'{... register('Email')}/><br/><br/>
+                <input type='email' placeholder='Enter Email'{... register('Email')}/><br/>
                 <p>{errors.Email?.message}</p>
 
                 <label>Enter Password</label><br/><br/>
-                <input type='text' placeholder='Passward'{... register('Passward')}/><br/><br/>
+                <input type='text' placeholder='Passward'{... register('Passward')}/><br/>
                 <p>{errors.Passward?.message}</p>
 
                 <label>Confirm Password</label><br/><br/>
-                <input type="text" placeholder='Confirm password' {... register('ConfirmPassward')}/><br/><br/>
+                <input type="text" placeholder='Confirm password' {... register('ConfirmPassward')}/><br/>
                 <p>{errors.ConfirmPassward?.message}</p>
 
                 <input type='submit' value='submit form' style={{width:'50%', color:'black', backgroundColor:'gold', 
-        fontWeight:'bolder', padding:'5px',color:' black'}} />
+        fontWeight:'bolder'}} />
             </form>
             </div> 
             <div className='signup-content2'>

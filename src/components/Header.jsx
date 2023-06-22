@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {FaHome} from 'react-icons/fa'
-import {FcAbout} from 'react-icons/fc'
+import {FaAirbnb} from 'react-icons/fa'
 import {MdContactPage} from 'react-icons/md'
 import {BsHouseXFill} from 'react-icons/bs'
 import {RiLoginBoxFill} from 'react-icons/ri'
@@ -20,7 +20,7 @@ function Header() {
                         <span className='span'><Link to="/"><a href='#'>Home</a></Link></span>
                         </li>
                         <li>
-                            <FcAbout style={{color:'gold'}}/>
+                            <FaAirbnb style={{color:'gold'}}/>
                             <span className='span'>
                         <Link to="/aboutus"><a href='#'>AboutUS</a></Link>
                         </span>

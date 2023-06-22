@@ -1,0 +1,27 @@
+.body {
+    width: 97%;
+    height: 160vh;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #ebf6f5;
+}
+
+.body-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-img {
+    padding-right: 10px;
+    margin: 7px;
+}
+
+.body-content {
+    font-size: medium;
+    font-weight: bold;
+    font-family: monospace;
+    padding-left: 5px;
+    padding-right: 8px;
+
+}
