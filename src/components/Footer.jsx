@@ -40,7 +40,7 @@ function Footer() {
           <img src='./src/assets/play-store.png'style={{with:'80px', height:'70px' , borderRadius:'8px'}}/>
           <h4>Phone support: +254-700-400-200</h4>
           <h4>MON-FRI 9AM-5PM EST</h4>
-          <button><a href='#'>Contuct us</a></button> &nbsp; &nbsp; 
+          <button><a href='#'><Link to = "/Contact"> Contuct us</Link></a></button> &nbsp; &nbsp; 
           <button><a href='#'>Privacy</a></button>
           <h4>@ Renting House Date:{year}</h4>
             </div> 

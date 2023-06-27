@@ -3,7 +3,7 @@ import './AboutUS.css'
 
 function AboutUS() {
   return (
-    <div className='body'>
+    <div className='body-cont'>
             <h1 style={{fontWeight:'bolder',paddingLeft:'29rem'}}>WHO ARE WE</h1>
         <div className='body-main'>
             

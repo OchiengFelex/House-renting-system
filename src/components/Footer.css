@@ -1,18 +1,36 @@
 .footer {
     width: 97%;
-    height: 47vh;
-    padding: 10px 10px;
+    padding: 10px;
     margin: 10px 15px;
     border-radius: 8px;
     background-color: #2d545e;
-
 }
-
 
 .icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    #icons-one {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #icons-two {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
 }
 
 #icons-one {
@@ -39,15 +57,12 @@
     padding-top: 30px;
 }
 
-
-
 span {
     padding: 5px;
     border-radius: 4px;
-
 }
 
-span :hover {
+span:hover {
     background-color: red;
     transition: 1s;
 }
@@ -56,4 +71,28 @@ button {
     background-color: red;
     font-weight: bolder;
     padding: 5px;
+}
+
+/* Additional Responsive Styles */
+@media screen and (max-width: 768px) {
+    .footer {
+        height: auto;
+        padding: 10px;
+    }
+
+    .footer-main {
+        text-align: center;
+    }
+
+    .footer-main img {
+        margin-bottom: 10px;
+    }
+
+    .footer-main h4 {
+        margin: 5px 0;
+    }
+
+    .footer-main button {
+        margin-top: 10px;
+    }
 }

@@ -1,53 +1,63 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import {FaHome} from 'react-icons/fa'
-import {FaAirbnb} from 'react-icons/fa'
-import {MdContactPage} from 'react-icons/md'
-import {BsHouseXFill} from 'react-icons/bs'
-import {RiLoginBoxFill} from 'react-icons/ri'
 
-import './Header.css'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FaHome } from 'react-icons/fa';
+import { FaAirbnb } from 'react-icons/fa';
+import { MdContactPage } from 'react-icons/md';
+import { BsHouseXFill } from 'react-icons/bs';
+import { RiLoginBoxFill } from 'react-icons/ri';
+
+import './Header.css';
+
 function Header() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
-    <div className='navbar'>
-        
-        <header>
-        <img src='./src/assets/logo.webp' style={{with:'80px', height:'70px' , borderRadius:'8px'}}/>
-            <nav>
-                <ul>
-                    <li>
-                            <FaHome style={{color:'gold'}}/>
-                        <span className='span'><Link to="/"><a href='#'>Home</a></Link></span>
-                        </li>
-                        <li>
-                            <FaAirbnb style={{color:'gold'}}/>
-                            <span className='span'>
-                        <Link to="/aboutus"><a href='#'>AboutUS</a></Link>
-                        </span>
-                        </li>
-                        <li>
-                            <MdContactPage style={{color:'gold'}}/>
-                        <span className='span'>
-                        <Link to="/contact"><a href='#'>Contact</a></Link>
-                        </span>
-                        </li>
-                        <li>
-                            <BsHouseXFill style={{color:'gold'}}/>
-                        <span className='span'>
-                        <Link to="/houselisting"><a href='#'> HouseListing</a></Link>
-                        </span>
-                        </li>
-                        <li>
-                            <RiLoginBoxFill style={{color:'gold'}}/>
-                        <span className='span'>
-                        <Link to="/signup"><a href='#'><button>SignUp</button></a></Link>
-                        </span>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <div className={`navbar ${isNavOpen ? 'nav-open' : ''}`}>
+      <header>
+        <div className='img1'>
+          <img src='./src/assets/logo.webp' style={{ width: '80px', height: '70px', borderRadius: '8px' }} />
+        </div>
+        <nav>
+          <div className={`nav-icon ${isNavOpen ? 'nav-open' : ''}`} onClick={toggleNav}>
+            <div className='line'></div>
+            <div className='line'></div>
+            <div className='line'></div>
+          </div>
+          <ul className={isNavOpen ? 'nav-open' : ''}>
+            <li>
+              <FaHome style={{ color: 'gold' }} />
+              <Link to='/'>Home</Link>
+            </li>
+
+            <li>
+              <FaAirbnb style={{ color: 'gold' }} />
+              <Link to='/aboutus'>About US</Link>
+            </li>
+
+            <li>
+              <RiLoginBoxFill style={{ color: 'gold' }} />
+              <Link to='/signup'>SignUp</Link>
+            </li>
+
+            <li>
+              <MdContactPage style={{ color: 'gold' }} />
+              <Link to='/contact'>Contact</Link>
+            </li>
+
+            <li>
+              <BsHouseXFill style={{ color: 'gold' }} />
+              <Link to='/houselisting'> House Listing</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
