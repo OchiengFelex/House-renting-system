@@ -1,5 +1,5 @@
 .houseListing-main {
-    background-color: whitesmoke;
+    background-color: #3FEEE6;
     padding: 10px;
     margin: 10px;
     border-radius: 8px;
@@ -48,4 +48,19 @@
     color: white;
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.next {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.next button:hover {
+    color: #3FEEE6;
 }

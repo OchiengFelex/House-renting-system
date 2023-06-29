@@ -3,7 +3,7 @@
     padding: 10px;
     margin: 10px 15px;
     border-radius: 8px;
-    background-color: #2d545e;
+    background-color: #1A1A1D;
 }
 
 .icons {
@@ -63,14 +63,20 @@ span {
 }
 
 span:hover {
-    background-color: red;
+    background-color: green;
     transition: 1s;
 }
 
 button {
-    background-color: red;
+    background-color: #f9004d;
     font-weight: bolder;
     padding: 5px;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: green;
+    transition: 1s;
 }
 
 /* Additional Responsive Styles */

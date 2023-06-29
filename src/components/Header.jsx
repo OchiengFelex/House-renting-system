@@ -7,6 +7,7 @@ import { MdContactPage } from 'react-icons/md';
 import { BsHouseXFill } from 'react-icons/bs';
 import { RiLoginBoxFill } from 'react-icons/ri';
 import {FaSignOutAlt} from 'react-icons/fa';
+import {TbBrandBooking} from 'react-icons/tb';
 import { useContext } from 'react'
 import {Context} from "../components/context/userContext/Context.jsx";
 
@@ -64,6 +65,11 @@ function Header() {
                 <li>
               <BsHouseXFill style={{ color: 'gold' }} />
               <Link to='/houselisting'> House Listing</Link>
+            </li>
+
+            <li>
+              <TbBrandBooking style={{ color: 'gold' }} />
+              <Link to='/booking'>Booking</Link>
             </li>
 
             <li>

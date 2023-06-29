@@ -1,9 +1,14 @@
 .body-cont {
-    width: 97%;
+    background-color: #3FEEE6;
     padding: 10px;
     margin: 10px;
     border-radius: 8px;
-    background-color: #ebf6f5;
+    width: 97%;
+    height: 160vh;
+    border-radius: 8px;
+    position: relative;
+    box-sizing: border-box;
+
 }
 
 .body-main {

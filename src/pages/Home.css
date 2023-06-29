@@ -1,4 +1,4 @@
-.content {
+.Home-main {
     width: 97%;
     padding: 10px;
     margin: 10px 15px;
@@ -13,7 +13,7 @@
     height: 100vh;
     padding: 10px;
     border-radius: 8px;
-    color: rgb(148, 5, 148);
+    color: #f9004d;
     background-size: cover;
     animation: animate 17s ease-in-out infinite;
 }

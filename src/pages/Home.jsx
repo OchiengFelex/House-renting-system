@@ -2,11 +2,11 @@ import React from 'react'
 import './Home.css'
 function Home() {
   return (
-    <div className='content'>
+    <div className='Home-main'>
         <div className='content-main'>
             <h1>Welcome To Ababu Real Estate </h1><br/>
             <h2>Rent The Best Houses And Offices</h2><br/>
-            <h4>SEAECH AFFORDABLE PROPERTIES</h4>
+            <h2>GET AFFORDABLE PROPERTIES</h2>
         </div>
         <div className='content-main1'>
             <h2>LUXURY REAL ESTATE</h2>

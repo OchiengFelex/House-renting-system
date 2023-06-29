@@ -1,12 +1,10 @@
 import React from 'react'
-import { useContext } from 'react'
-import {Context} from "../components/context/userContext/Context.jsx";
+import {Link} from 'react-router-dom'
 import './HouseListing.css'
 
 function HouseListing() {
 
-
-    
+  
   return (
     <div className="houseListing-main">
 
@@ -25,6 +23,9 @@ function HouseListing() {
     Price: $2,500,000<br/>
     Location: Hilltop Estates, kenya</pre>
         </div>
+        <div className="next">
+        <button><Link to = "/booking"> Book Now </Link></button>
+        </div>
     </div>
     <div className="cards">
         <div className="image">
@@ -34,12 +35,17 @@ function HouseListing() {
     <h2>Metropolitan Apartments</h2>
         </div>
         <div className="description">
-    <pre>Upscale apartments in the heart of the city, <br/>
-    offering convenience and a vibrant urban lifestyle.<br/>
+    <pre>apartments in the heart of the city, <br/>
+    offering convenience urban lifestyle.<br/>
     Price: $1,800/month (rent)<br/>
-    Location: Downtown Central District, Toronto, Canada.</pre>
+    Location: Downtown Central District.</pre>
+        </div>
+        <div className="next">
+        <button><Link to = "/booking"> Book Now </Link></button>
         </div>
     </div>
+
+
     
     <div className="cards">
         <div className="image">
@@ -54,7 +60,11 @@ function HouseListing() {
     Price: $1,200/month (rent)<br/>
     Location: Downtown Runda</pre>
         </div>
+        <div className="next">
+        <button><Link to = "/booking"> Book Now </Link></button>
+        </div>
     </div>
+
 
     <div className="cards">
         <div className="image">
@@ -69,6 +79,9 @@ function HouseListing() {
     Price: £500,000<br/>
     Location: Waterside Carne. Kenya.</pre>
         </div>
+        <div className="next">
+        <button><Link to = "/booking"> Book Now </Link></button>
+        </div>
     </div>
 
     <div className="cards">
@@ -79,12 +92,17 @@ function HouseListing() {
     <h2>Tranquil Villa Retreat</h2>
         </div>
         <div className="description">
-    <pre>Secluded villas nestled amidst lush greenery,<br/>
+    <pre> villas nestled amidst lush greenery,<br/>
     offering tranquility and privacy.<br/>
     Price: €1,800,000<br/>
     Location: Monteith,pale Pipeline.Kenya.</pre>
         </div>
+        <div className="next">
+        <button><Link to = "/booking"> Book Now </Link></button>
+        </div>
     </div>
+
+
 
     <div className="cards">
         <div className="image">
@@ -99,7 +117,11 @@ function HouseListing() {
     Price: $3,000/month (rent)<br/>
     Location: Downtown Skyline District.</pre>
         </div>
+        <div className="next">
+        <button><Link to = "/booking"> Book Now </Link></button>
+        </div>
     </div>
+
 
 
     <div className="cards">
@@ -115,6 +137,9 @@ function HouseListing() {
     Price: $800,000<br/>
     Location: Indian Shores, Mombasa .</pre>
         </div>
+        <div className="next">
+        <button><Link to = "/booking"> Book Now </Link></button>
+        </div>
     </div>
 
     <div className="cards">
@@ -126,9 +151,12 @@ function HouseListing() {
         </div>
         <div className="description">
     <pre>Spacious villas with expansive gardens, <br/>
-    perfect for nature enthusiasts and outdoor gatherings.<br/>
+    perfect for nature enthusiasts and outdoor.<br/>
     Price: ₹4,500,000<br/>
-    Location: Whitefield, Bangalore, India.</pre>
+    Location: Whitefield, Bangalore,Kenya.</pre>
+        </div>
+        <div className="next">
+        <button><Link to = "/booking"> Book Now </Link></button>
         </div>
     </div>
 
@@ -141,10 +169,13 @@ function HouseListing() {
     <h2>Oasis Villas</h2>
         </div>
         <div className="description">
-    <pre>Exquisite villas with lush courtyards and resort-style <br/>
+    <pre>Exquisite villas with lush courtyards<br/>
     amenities, creating an oasis of relaxation.<br/>
     Price: AED 6,000,000<br/>
     Location: Palm , United Arab Emirates.</pre>
+        </div>
+        <div className="next">
+        <button><Link to = "/booking"> Book Now </Link></button>
         </div>
     </div>
     </div>

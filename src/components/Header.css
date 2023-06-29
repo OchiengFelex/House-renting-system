@@ -4,7 +4,7 @@
     padding: 10px;
     margin: 10px 15px;
     border-radius: 8px;
-    background-color: #2d545e;
+    background-color: #1A1A1D;
 }
 
 header {
@@ -42,7 +42,7 @@ a {
 }
 
 a:hover {
-    background-color: red;
+    background-color: #f9004d;
     transition: 0.5s;
 }
 

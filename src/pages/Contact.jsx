@@ -49,10 +49,13 @@ function Contact() {
 
   return (
     <div className='main-contact'>
+     
+    <div id='main-body'>
+        
+    <div className="contact-one">
         <h1>Contact Us</h1>
      <h4>Say Hello 😊 : Tell us how we can guide you</h4>
-
-    <div id='main-body'>
+        </div>
     
      <div className="form-login">
     <h1  style={{ color: '#950740'}}>Login</h1>
