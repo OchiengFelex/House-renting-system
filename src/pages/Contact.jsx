@@ -4,9 +4,16 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {useNavigate} from 'react-router-dom'
 import axios from 'axios'; // Import axios, not Axios
+import {Context} from "../components/context/userContext/Context.jsx";
+
+import { useContext } from 'react';
+
+
 import './Contact.css'
 
 function Contact() {
+
+    const {user, dispatch} = useContext (Context);
 
     const navigate = useNavigate();
     const schema = yup.object().shape({
@@ -20,12 +27,13 @@ function Contact() {
         axios.post("http://localhost:8081/auth/login", data)
           .then((response) => {
             if (response){
+                dispatch({type: "LOGIN_SUCCESS", payload:response})
                 response.data.message && alert(response.data.message);
                 alert("Logged in successfully");
                 console.log(response.data);
                 navigate("/houselisting");
             }
-  
+  console.log(user)
            
           })
           .catch((error) => {

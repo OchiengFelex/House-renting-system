@@ -8,9 +8,13 @@ import HouseListing from './pages/HouseListing'
 import Notfound from './pages/Notfound'
 import SignUp from './pages/SignUp'
 import AboutUS from './pages/AboutUS'
+import { useContext } from 'react'
+import {Context} from "./components/context/userContext/Context.jsx";
+
 
 function App() {
-  
+    const { user } = useContext(Context);
+
 
   return (
     <>
@@ -21,7 +25,7 @@ function App() {
             <Route path='/signup' element={<SignUp/>}/>
             <Route path ="/aboutus" element={<AboutUS/>}/>
             <Route path='/contact' element={<Contact/>}/>
-            <Route path='/houselisting' element={<HouseListing/>}/>
+            <Route path='/houselisting' element= {user ? <HouseListing/> : <Contact/> }/>
             <Route path='*' element={<Notfound/>}/>
         </Routes>
         <Footer/>

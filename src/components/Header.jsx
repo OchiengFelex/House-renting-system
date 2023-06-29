@@ -6,10 +6,19 @@ import { FaAirbnb } from 'react-icons/fa';
 import { MdContactPage } from 'react-icons/md';
 import { BsHouseXFill } from 'react-icons/bs';
 import { RiLoginBoxFill } from 'react-icons/ri';
+import {FaSignOutAlt} from 'react-icons/fa';
+import { useContext } from 'react'
+import {Context} from "../components/context/userContext/Context.jsx";
 
 import './Header.css';
 
 function Header() {
+
+    const {user, dispatch} = useContext(Context);
+    const handleLogout = () => {
+        dispatch({type: "LOGOUT"});
+    };
+
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -49,10 +58,22 @@ function Header() {
               <Link to='/contact'>Contact</Link>
             </li>
 
-            <li>
+            { user  && (
+                <>
+                
+                <li>
               <BsHouseXFill style={{ color: 'gold' }} />
               <Link to='/houselisting'> House Listing</Link>
             </li>
+
+            <li>
+            <FaSignOutAlt style={{ color: 'red' }} />
+            <Link onClick={handleLogout}> Logout</Link>
+            </li>
+
+                </>
+            )}
+
           </ul>
         </nav>
       </header>

@@ -15,25 +15,33 @@
     border-radius: 8px;
     color: rgb(148, 5, 148);
     background-size: cover;
-    animation: animate 16s ease-in-out infinite;
+    animation: animate 17s ease-in-out infinite;
 }
 
 @keyframes animate {
 
     0%,
+    /*  {
+        background-image: url('./src/image/home p1.jpg');
+    } */
+
     100% {
-        background-image: url('./src/assets/hp1.jpg');
+        background-image: url('./src/image/house.jpg');
     }
 
-    25% {
+    20% {
         background-image: url('./src/assets/home.jpg');
     }
 
-    50% {
+    40% {
+        background-image: url('./src/image/house.jpg');
+    }
+
+    % {
         background-image: url('./src/assets/hp2.jpg');
     }
 
-    75% {
+    80% {
         background-image: url('./src/assets/hp4.jpeg');
     }
 }
@@ -58,6 +66,14 @@
     width: 100%;
     max-width: 400px;
     margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+
+
+}
+
+.tag img:hover {
+    transform: scale(1.01);
 }
 
 @media screen and (max-width: 768px) {

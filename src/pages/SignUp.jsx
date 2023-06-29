@@ -29,6 +29,8 @@ function SignUp() {
       .catch((error) => {
         alert(error.response.data.error);
         console.log(error.data)
+        //navigate("/");
+
       })
       .finally(() => {
         reset();
